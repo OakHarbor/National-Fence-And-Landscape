@@ -1812,7 +1812,7 @@ form p{
     #gallery img {
         width: 20%;
         height: auto;
-        max-height: 250px;
+        max-height: 290px;
     }
 
     /*-- -------------------------- -->
@@ -2395,6 +2395,51 @@ form p{
 
     .get-right .button-solid {
         margin-right: 25px;
+    }
+
+}
+
+/* Step 5 */
+@media screen and (min-width: 2250px) {
+
+    #gallery img {
+        max-height: 500px;
+    }
+
+}
+
+/* Step 6 */
+@media screen and (min-width: 2500px) {
+
+    #gallery img {
+        max-height: 600px;
+    }
+
+}
+
+/* Step 7 */
+@media screen and (min-width: 3000px) {
+
+    #gallery img {
+        max-height: 700px;
+    }
+
+}
+
+/* Step 8 */
+@media screen and (min-width: 3450px) {
+
+    #gallery img {
+        max-height: 800px;
+    }
+
+}
+
+/* Step 9 */
+@media screen and (min-width: 3950px) {
+
+    #gallery img {
+        max-height: 900px;
     }
 
 }
