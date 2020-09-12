@@ -16,7 +16,7 @@ h3 {
 
 #hero {
     height: auto;
-    background: url("/images/image-5.jpg");
+    background: url("/images/landing-mobile.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1229,6 +1229,13 @@ form p{
     /*-- -------------------------- -->
     <---            Hero            -->
     <--- -------------------------- -*/
+
+    #hero {
+        background: url("/images/image-15.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
     #home-h {
         font-size: 3em;
