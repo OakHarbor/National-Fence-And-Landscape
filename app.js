@@ -2,8 +2,8 @@
 
 var $hamburger = $(".hamburger");
 $hamburger.on("click", function (e) {
-    $hamburger.toggleClass("is-active");
-    // Do something else, like open/close menu
+  $hamburger.toggleClass("is-active");
+  // Do something else, like open/close menu
 });
 
 /* Code for the toggling of the navbar */
@@ -11,43 +11,43 @@ $hamburger.on("click", function (e) {
 let toggleNavStatus = false;
 
 let toggleNav = function () {
-    var $html = $("html");
-    var $navbarMenu = $(".navbar-menu");
-    let getSidebar = document.querySelector(".navbar-menu");
-    let getSidebarUL = document.querySelector(".side-nav ul");
-    let getSidebarLinks = document.querySelectorAll(".side-nav a");
-    let getSidebarVisibility = document.querySelector(".side-nav");
+  var $html = $("html");
+  var $navbarMenu = $(".navbar-menu");
+  let getSidebar = document.querySelector(".navbar-menu");
+  let getSidebarUL = document.querySelector(".side-nav ul");
+  let getSidebarLinks = document.querySelectorAll(".side-nav a");
+  let getSidebarVisibility = document.querySelector(".side-nav");
 
-    if (toggleNavStatus === false) {
+  if (toggleNavStatus === false) {
 
-        getSidebarVisibility.style.visibility = "visible";
-        getSidebar.style.overflow = "visible";
+    getSidebarVisibility.style.visibility = "visible";
+    getSidebar.style.overflow = "visible";
 
-        getSidebarLinks.forEach((item, index) => {
-            console.log(item);
-            item.style.opacity = "1";
-            item.style.visibility = "visible";
-        });
-        getSidebar.style.width = "60%";
-        getSidebar.style.overflow = "visible";
-        $html.addClass("clicked");
-        $navbarMenu.addClass("clicked")
-        toggleNavStatus = true;
-    }
+    getSidebarLinks.forEach((item, index) => {
+      console.log(item);
+      item.style.opacity = "1";
+      item.style.visibility = "visible";
+    });
+    getSidebar.style.width = "60%";
+    getSidebar.style.overflow = "visible";
+    $html.addClass("clicked");
+    $navbarMenu.addClass("clicked")
+    toggleNavStatus = true;
+  }
 
-    else if (toggleNavStatus === true) {
+  else if (toggleNavStatus === true) {
 
-        getSidebarLinks.forEach((item, index) => {
-            item.style.opacity = "0";
-            item.style.transitionDelay = "0s";
-            item.style.visibility = "hidden";
-        });
-        getSidebar.style.overflow = "visible";
-        getSidebar.style.width = "0";
-        $navbarMenu.removeClass("clicked")
-        $html.removeClass("clicked");
-        toggleNavStatus = false;
-    }
+    getSidebarLinks.forEach((item, index) => {
+      item.style.opacity = "0";
+      item.style.transitionDelay = "0s";
+      item.style.visibility = "hidden";
+    });
+    getSidebar.style.overflow = "visible";
+    getSidebar.style.width = "0";
+    $navbarMenu.removeClass("clicked")
+    $html.removeClass("clicked");
+    toggleNavStatus = false;
+  }
 }
 
 /* Modals collected in variables */
@@ -277,6 +277,9 @@ var $topCard = $(".top-card");
 var $services = $("#services");
 var $svgCircle = $(".svg-circle");
 
+// Experience
+var $experienceH3 = $(".experience-item h3");
+
 // Review 
 var $reviewerInfo = $(".reviewer-info h4");
 var $quotesBefore = $("#quote");
@@ -336,6 +339,9 @@ const enableDarkMode = () => {
   $services.addClass("dark-mode");
   $svgCircle.addClass("dark-mode");
 
+  // Experience
+  $experienceH3.addClass("dark-mode");
+
   // Reviewer
   $reviewerInfo.addClass("dark-mode");
   $quotesBefore.addClass("dark-mode");
@@ -392,6 +398,9 @@ const disableDarkMode = () => {
   // Services
   $services.removeClass("dark-mode");
   $svgCircle.removeClass("dark-mode");
+
+  // Experience
+  $experienceH3.removeClass("dark-mode");
 
   // Reviewer
   $reviewerInfo.removeClass("dark-mode");
